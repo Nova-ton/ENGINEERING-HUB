@@ -1,0 +1,6 @@
+{
+  "name": "Engineering Hub",
+  "description": "Multi-module engineering calculation and data analysis platform including Pipe Flow Analyser, Heat Transfer Calculator, and Rock & Fluid Data Dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
