@@ -25,7 +25,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
   const { theme } = useTheme();
 
   return (
-    <div className="space-y-10 pb-12">
+    <div className="space-y-10 pb-12 bg-[#252424]">
       {/* Hero Welcome Banner */}
       <section
         className={`rounded-2xl p-8 sm:p-10 text-white shadow-xl relative overflow-hidden transition-colors ${

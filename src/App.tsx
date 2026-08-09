@@ -24,7 +24,7 @@ function MainApp() {
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full max-w-full overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <main className="flex-1 max-w-7xl w-full max-w-full overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-8 pt-6 bg-[#252424]">
         {currentPage === 'home' && <HomeView onNavigate={setCurrentPage} />}
         {currentPage === 'pipe_flow' && <PipeFlowView onNavigate={setCurrentPage} />}
         {currentPage === 'heat_transfer' && <HeatTransferView onNavigate={setCurrentPage} />}
