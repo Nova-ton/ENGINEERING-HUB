@@ -14,7 +14,7 @@ function MainApp() {
 
   return (
     <div
-      className={`min-h-screen font-sans flex flex-col transition-colors duration-200 ${
+      className={`min-h-screen max-w-full overflow-x-hidden font-sans flex flex-col transition-colors duration-200 ${
         theme === 'dark'
           ? 'bg-[#0a0a0a] text-[#f2f2f2] selection:bg-[#d4af37]/30 selection:text-white'
           : 'bg-slate-50 text-slate-900 selection:bg-blue-100 selection:text-blue-900'
@@ -24,7 +24,7 @@ function MainApp() {
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <main className="flex-1 max-w-7xl w-full max-w-full overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         {currentPage === 'home' && <HomeView onNavigate={setCurrentPage} />}
         {currentPage === 'pipe_flow' && <PipeFlowView onNavigate={setCurrentPage} />}
         {currentPage === 'heat_transfer' && <HeatTransferView onNavigate={setCurrentPage} />}
