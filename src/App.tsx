@@ -60,7 +60,7 @@ function MainApp() {
             </div>
 
             <div
-              className={`flex items-center gap-4 ${
+              className={`flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4 ${
                 theme === 'dark' ? 'text-zinc-400' : 'text-slate-600'
               }`}
             >
